@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pensar en trade-offs · Fundamentos de Arquitectura</title>
+<meta name="description" content="Un arquitecto no elige la mejor tecnología en abstracto: elige la menos mala para un contexto. Para hacerlo necesita separar arquitectura de diseño,…">
+<meta name="theme-color" content="#f5f1e8">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/curso.css">
+<script>(function(){try{var t=localStorage.getItem('fsa_theme');if(!t){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+</head>
+<body class="is-lesson">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<aside class="sidebar" id="sidebar" aria-label="Temario del curso">
+<a class="brand" href="index.html">
+  <span class="brand-mark">FSA</span>
+  <span class="brand-text"><strong>Fundamentos de Arquitectura</strong><span>Edición esencial</span></span>
+</a>
+<div class="side-progress"><div class="side-progress-top"><svg class="ring" viewBox="0 0 46 46" aria-hidden="true"><circle class="ring-bg" cx="23" cy="23" r="18"></circle><circle class="ring-fg" data-ring cx="23" cy="23" r="18"></circle></svg><div class="side-progress-text"><strong><span data-done-count>0</span> de 28 pasos</strong><span>Tu avance</span></div></div></div>
+<nav class="side-nav"><div class="nav-label">Temario · 7 módulos</div>
+<details class="mod" data-module="01" open data-current="true">
+<summary>
+  <span class="mod-num">01</span>
+  <span class="mod-name">Pensamiento arquitectónico</span>
+  <span class="mod-count" data-modcount="01">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="01"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="fsam1l1" href="fsam1l1.html"><span class="ln">01.1</span><span class="lt">Qué es la arquitectura de software</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link is-current" data-lesson="fsam1l2" href="fsam1l2.html" aria-current="page"><span class="ln">01.2</span><span class="lt">Pensar en trade-offs</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam1l3" href="fsam1l3.html"><span class="ln">01.3</span><span class="lt">Características de arquitectura</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="fsam1q" href="fsam1q.html"><span class="ln">01.4</span><span class="lt">Cierre del módulo 01</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="02">
+<summary>
+  <span class="mod-num">02</span>
+  <span class="mod-name">Modularidad y componentes</span>
+  <span class="mod-count" data-modcount="02">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="02"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="fsam2l1" href="fsam2l1.html"><span class="ln">02.1</span><span class="lt">Modularidad: cohesión y acoplamiento</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam2l2" href="fsam2l2.html"><span class="ln">02.2</span><span class="lt">Identificar y medir características</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam2l3" href="fsam2l3.html"><span class="ln">02.3</span><span class="lt">Componentes y cuánto abarcan</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="fsam2q" href="fsam2q.html"><span class="ln">02.4</span><span class="lt">Cierre del módulo 02</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="03">
+<summary>
+  <span class="mod-num">03</span>
+  <span class="mod-name">Estilos fundamentales</span>
+  <span class="mod-count" data-modcount="03">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="03"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="fsam3l1" href="fsam3l1.html"><span class="ln">03.1</span><span class="lt">Arquitectura en capas</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam3l2" href="fsam3l2.html"><span class="ln">03.2</span><span class="lt">Arquitectura pipeline</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam3l3" href="fsam3l3.html"><span class="ln">03.3</span><span class="lt">Microkernel</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="fsam3q" href="fsam3q.html"><span class="ln">03.4</span><span class="lt">Cierre del módulo 03</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="04">
+<summary>
+  <span class="mod-num">04</span>
+  <span class="mod-name">Estilos distribuidos</span>
+  <span class="mod-count" data-modcount="04">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="04"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="fsam4l1" href="fsam4l1.html"><span class="ln">04.1</span><span class="lt">Service-based</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam4l2" href="fsam4l2.html"><span class="ln">04.2</span><span class="lt">Arquitectura dirigida por eventos</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam4l3" href="fsam4l3.html"><span class="ln">04.3</span><span class="lt">Space-based</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="fsam4q" href="fsam4q.html"><span class="ln">04.4</span><span class="lt">Cierre del módulo 04</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="05">
+<summary>
+  <span class="mod-num">05</span>
+  <span class="mod-name">Microservicios y elección</span>
+  <span class="mod-count" data-modcount="05">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="05"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="fsam5l1" href="fsam5l1.html"><span class="ln">05.1</span><span class="lt">SOA orquestada</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam5l2" href="fsam5l2.html"><span class="ln">05.2</span><span class="lt">Microservicios</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam5l3" href="fsam5l3.html"><span class="ln">05.3</span><span class="lt">Cómo elegir un estilo</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="fsam5q" href="fsam5q.html"><span class="ln">05.4</span><span class="lt">Cierre del módulo 05</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="06">
+<summary>
+  <span class="mod-num">06</span>
+  <span class="mod-name">Decisiones y riesgo</span>
+  <span class="mod-count" data-modcount="06">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="06"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="fsam6l1" href="fsam6l1.html"><span class="ln">06.1</span><span class="lt">Decisiones de arquitectura</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam6l2" href="fsam6l2.html"><span class="ln">06.2</span><span class="lt">Análisis de riesgo</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam6l3" href="fsam6l3.html"><span class="ln">06.3</span><span class="lt">Diagramar y presentar</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="fsam6q" href="fsam6q.html"><span class="ln">06.4</span><span class="lt">Cierre del módulo 06</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="07">
+<summary>
+  <span class="mod-num">07</span>
+  <span class="mod-name">Equipos y carrera</span>
+  <span class="mod-count" data-modcount="07">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="07"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="fsam7l1" href="fsam7l1.html"><span class="ln">07.1</span><span class="lt">Equipos eficaces</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam7l2" href="fsam7l2.html"><span class="ln">07.2</span><span class="lt">Negociación y liderazgo</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="fsam7l3" href="fsam7l3.html"><span class="ln">07.3</span><span class="lt">La carrera del arquitecto</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="fsam7q" href="fsam7q.html"><span class="ln">07.4</span><span class="lt">Cierre del módulo 07</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+</nav>
+<div class="side-foot"><a href="glosario.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5Z"></path><path d="M4 5.5v16"></path></svg> Glosario</a><a href="progreso.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"></path></svg> Mi progreso</a><a href="Fundamentos-Arquitectura-Esencial.pdf"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path></svg> Manual en PDF</a><div class="edition">FSA · 2026</div></div>
+</aside>
+<div class="overlay" data-overlay></div><main class="main" id="contenido">
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-label="Abrir el temario" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+  <nav class="crumbs" aria-label="Migas de pan"><a href="index.html">Curso</a><span class="sep">/</span><span>Módulo 01</span><span class="sep">/</span><strong>Pensar en trade-offs</strong></nav>
+  <div class="top-actions">
+    <button class="search-btn" type="button" data-search-open aria-label="Buscar en el curso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4"></path></svg><span>Buscar</span><kbd>⌘K</kbd></button>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Cambiar tema"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z"></path></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button>
+  </div>
+  <div class="readbar" data-readbar></div>
+</header>
+<div class="lesson-wrap">
+  <article class="lesson">
+    <header>
+  <div class="kicker">Módulo 01 · Lección 2 de 3</div>
+  <h1>Pensar en trade-offs</h1>
+  <div class="lesson-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 1.8"></path></svg> 9 min de lectura</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5Z"></path><path d="M4 5.5v16M8 7h8M8 11h6"></path></svg> 692 palabras</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="4" y="4" width="6" height="6" rx="1"></rect><rect x="14" y="4" width="6" height="6" rx="1"></rect><rect x="4" y="14" width="6" height="6" rx="1"></rect><rect x="14" y="14" width="6" height="6" rx="1"></rect></svg> 3 apartados</span></div>
+</header>
+    <div class="brief">
+  <div class="brief-k">En esta lección</div>
+  <div><ul><li>Arquitectura es lo caro de revertir; diseño es lo local y barato</li><li>La amplitud técnica permite comparar, no solo ejecutar</li><li>Un trade-off se explica: de qué depende y hacia dónde inclina</li><li>El negocio y el código corrigen las ideas abstractas</li></ul><p>Lee de principio a fin; al terminar, el botón inferior te lleva directo a la siguiente lección.</p></div>
+</div>
+<div class="prose">
+<p class="lead">Un arquitecto no elige la mejor tecnología en abstracto: elige la menos mala para un contexto. Para hacerlo necesita separar arquitectura de diseño, mantener amplitud técnica, entender los impulsores del negocio y no perder el contacto con el código. Esta lección ofrece un método para comparar opciones sin caer en el «depende» vacío.</p>
+<figure class="diagram"><svg viewBox="0 0 840 170" role="img" aria-label="Diagrama de bucle de entrenamiento"><circle cx="420" cy="85" r="30" fill="none" stroke="#C8BBA3" stroke-width="1.2" stroke-dasharray="3 4"/><text x="420" y="82" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="600" fill="#786E5E" text-anchor="middle" letter-spacing="1">ITERA</text><text x="420" y="94" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="600" fill="#786E5E" text-anchor="middle" letter-spacing="1">CIÓN</text><rect x="332.0" y="7.0" width="176" height="42" rx="9" fill="#FFFDF7" stroke="#C9481B" stroke-width="1.8"/><text x="420" y="32.5" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#18140F" text-anchor="middle">Entender el negocio</text><rect x="580.0" y="64.0" width="176" height="42" rx="9" fill="#FFFDF7" stroke="#C8BBA3" stroke-width="1.3"/><text x="668" y="89.5" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#18140F" text-anchor="middle">Explorar opciones</text><rect x="332.0" y="121.0" width="176" height="42" rx="9" fill="#FFFDF7" stroke="#C8BBA3" stroke-width="1.3"/><text x="420" y="146.5" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#18140F" text-anchor="middle">Comparar trade-offs</text><rect x="84.0" y="64.0" width="176" height="42" rx="9" fill="#FFFDF7" stroke="#C8BBA3" stroke-width="1.3"/><text x="172" y="89.5" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#18140F" text-anchor="middle">Decidir y codificar</text><defs><marker id="lp-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#786E5E"/></marker></defs><line x1="512" y1="38" x2="578" y2="62" stroke="#786E5E" stroke-width="1.7" marker-end="url(#lp-arrow)"/><line x1="656" y1="110" x2="514" y2="138" stroke="#786E5E" stroke-width="1.7" marker-end="url(#lp-arrow)"/><line x1="328" y1="138" x2="266" y2="110" stroke="#786E5E" stroke-width="1.7" marker-end="url(#lp-arrow)"/><line x1="188" y1="62" x2="326" y2="38" stroke="#786E5E" stroke-width="1.7" marker-end="url(#lp-arrow)"/></svg><figcaption>El pensamiento arquitectónico es un ciclo: el contexto alimenta las opciones, las opciones se comparan y la decisión vuelve a la realidad del código.</figcaption></figure>
+<h2 id="arquitectura-y-diseno-no-compiten">Arquitectura y diseño no compiten</h2>
+<p>La arquitectura define la estructura y las reglas que no deberían cambiar sin una decisión consciente. El diseño resuelve cómo encajan las piezas dentro de esa estructura: patrones de clases, esquemas de datos, interfaces locales. La frontera no siempre es nítida, y eso está bien. Lo importante es saber qué decisiones necesitan consenso y cuáles puede tomar un equipo sin pedir permiso.</p>
+<p>Cuando todo se trata como arquitectura, el equipo se paraliza esperando aprobación para cada detalle. Cuando nada se trata como arquitectura, cada equipo inventa su propia estructura y el sistema se vuelve incoherente. La práctica útil es reservar la conversación arquitectónica para lo que es caro de revertir o afecta a varios equipos, y delegar el resto con principios claros.</p>
+<p>Una prueba sencilla: si la decisión se puede deshacer en una tarde y solo afecta a un módulo, es diseño. Si cambia contratos entre equipos, datos compartidos o cualidades del sistema, es arquitectura. Esa clasificación evita reuniones innecesarias y, a la vez, protege las decisiones que de verdad importan.</p>
+<h2 id="amplitud-tecnica-y-analisis-de-trade-offs">Amplitud técnica y análisis de trade-offs</h2>
+<p>La profundidad sirve para resolver; la amplitud sirve para elegir. Un arquitecto debe conocer el mapa: qué familias de bases de datos existen, cómo se comportan los estilos distribuidos, qué implican los distintos modelos de consistencia. No necesita ser el mejor programador de cada herramienta, pero sí entender sus límites para no aceptar una promesa de marketing.</p>
+<p>El análisis de trade-offs consiste en identificar las fuerzas en conflicto y valorarlas con el contexto. No basta con decir «depende»: hay que explicar de qué depende y en qué dirección inclina la balanza. Una tabla con opciones, características, ventajas, riesgos y condiciones de reversión convierte una discusión circular en una decisión trazable.</p>
+<p>También conviene distinguir lo que se sabe de lo que se supone. Las decisiones arquitectónicas suelen tomarse con información incompleta. Registrar las suposiciones permite revisarlas cuando aparezcan datos nuevos. Una buena decisión con una suposición falsa no es un fracaso del método; es una señal de que hay que actualizar el contexto y volver a decidir.</p>
+<h2 id="entender-el-negocio-y-no-perder-la-mano">Entender el negocio y no perder la mano</h2>
+<p>Los impulsores del negocio son el marco de cualquier decisión técnica. Si la empresa necesita lanzar una función en seis semanas para no perder una licitación, la arquitectura perfecta para dentro de tres años es irrelevante. Si el coste de una caída es enorme, la disponibilidad pesa más que la elegancia. El arquitecto traduce esas presiones en características medibles.</p>
+<p>Mantenerse cerca del código evita diseñar castillos en el aire. No se trata de competir con el equipo, sino de conocer las fricciones reales: cuánto tarda una prueba, qué duele al desplegar, qué parte del sistema nadie quiere tocar. Ese conocimiento cambia las decisiones y da credibilidad cuando hay que pedir un esfuerzo.</p>
+<p>El equilibrio es deliberado. Demasiado código y el arquitecto se convierte en un cuello de botella; demasiada distancia y sus decisiones se vuelven teóricas. Una práctica útil es asumir tareas pequeñas de alto valor, revisar los cambios críticos y participar en los incidentes. La arquitectura se corrige con el contacto con la realidad.</p>
+<aside class="lesson-extra keypoints"><h2 id="ideas-clave">Ideas clave</h2><ul><li>Clasifica cada decisión por coste de reversión y alcance.</li><li>Escribe las suposiciones junto a la decisión.</li><li>Compara opciones con características y condiciones, no con gustos.</li><li>Traduce presiones de negocio a umbrales medibles.</li><li>Reserva tiempo de código para mantener las decisiones aterrizadas.</li></ul></aside>
+<aside class="lesson-extra example"><h2 id="caso">Caso concreto</h2><p>Un equipo duda entre una base relacional y un almacén documental para un catálogo. El arquitecto escribe las suposiciones: los productos tienen atributos distintos por categoría y las consultas más frecuentes son por identificador. Con esos datos, el modelo documental gana para el catálogo, pero la base relacional sigue siendo mejor para pedidos y pagos. La decisión final es usar cada motor donde su modelo encaja, no uno para todo.</p></aside>
+<aside class="lesson-extra caution"><h2 id="cuidado">Cuidado</h2><p>«Depende» sin criterios es una forma elegante de no decidir. Si no puedes enumerar qué observación cambiaría tu elección, todavía no has hecho el análisis.</p></aside>
+</div>
+    <section class="finish">
+  <div class="eyebrow">Siguiente lección</div>
+  <h2>Características de arquitectura</h2>
+  <p>Continúa la lectura sin volver al índice. También puedes usar la flecha → del teclado.</p>
+  <div class="finish-actions">
+    <a class="btn btn-cream" href="fsam1l3.html" data-complete-link="fsam1l2">Completar y seguir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+    <a class="quiet" href="fsam1l3.html">Saltar sin completar</a>
+  </div>
+  <div class="finish-prev"><a href="fsam1l1.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg> Anterior: Qué es la arquitectura de software</a></div>
+</section>
+  </article>
+<aside class="toc" aria-label="En esta página"><div class="toc-label">En esta página</div><a href="#arquitectura-y-diseno-no-compiten">Arquitectura y diseño no compiten</a><a href="#amplitud-tecnica-y-analisis-de-trade-offs">Amplitud técnica y análisis de trade-offs</a><a href="#entender-el-negocio-y-no-perder-la-mano">Entender el negocio y no perder la mano</a><a href="#ideas-clave">Ideas clave</a><a href="#caso">Caso concreto</a><a href="#cuidado">Cuidado</a></aside>
+</div>
+</main>
+<nav class="dock" aria-label="Navegación entre lecciones">
+  <a class="dock-btn" href="fsam1l1.html" aria-label="Lección anterior: Qué es la arquitectura de software" title="Anterior (←)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg></a>
+  <div class="dock-mid"><span>Paso 2 / 28</span><i><b data-dockbar></b></i></div>
+  <a class="dock-next" href="fsam1l3.html" title="Siguiente (→)">Siguiente <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</nav>
+<div class="searchbox" data-search role="dialog" aria-modal="true" aria-label="Buscar en el curso">
+  <div class="search-panel">
+    <div class="search-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4"></path></svg><input class="search-input" type="search" placeholder="Busca una lección o un tema…" aria-label="Buscar una lección o un tema" autocomplete="off"><button class="search-close" type="button" data-search-close>ESC</button></div>
+    <div class="search-results"></div>
+    <div class="sr-hint"><span>↑ ↓ para navegar · Enter para abrir</span><span>Esc para cerrar</span></div>
+  </div>
+</div>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+<script>window.FSA={"total":28,"current":"fsam1l2","next":{"title":"Características de arquitectura","href":"fsam1l3.html"},"prev":{"title":"Qué es la arquitectura de software","href":"fsam1l1.html"},"modules":[{"num":"01","title":"Pensamiento arquitectónico","lessons":[{"id":"fsam1l1","num":1,"lnum":1,"title":"Qué es la arquitectura de software","href":"fsam1l1.html","kind":"lesson","search":"arquitectura definición estructura características decisiones principios rol del arquitecto trade-off leyes expectativas negocio comunicación"},{"id":"fsam1l2","num":2,"lnum":2,"title":"Pensar en trade-offs","href":"fsam1l2.html","kind":"lesson","search":"trade-off arquitectura diseño amplitud técnica profundidad negocio impulsores decisiones suposiciones comparar opciones reversibilidad"},{"id":"fsam1l3","num":3,"lnum":3,"title":"Características de arquitectura","href":"fsam1l3.html","kind":"lesson","search":"características arquitectura atributos calidad ilidades operativas estructurales dominio disponibilidad escalabilidad seguridad mantenibilidad priorizar mínimo malo drivers"},{"id":"fsam1q","num":4,"lnum":4,"title":"Cierre del módulo 01","href":"fsam1q.html","kind":"quiz","search":"cierre arquitectura definición características decisiones trade-off prioridad escenarios rol del arquitecto"}]},{"num":"02","title":"Modularidad y componentes","lessons":[{"id":"fsam2l1","num":1,"lnum":1,"title":"Modularidad: cohesión y acoplamiento","href":"fsam2l1.html","kind":"lesson","search":"modularidad cohesión acoplamiento connascencia aferente eferente inestabilidad abstracción secuencia principal módulo granularidad dependencias"},{"id":"fsam2l2","num":2,"lnum":2,"title":"Identificar y medir características","href":"fsam2l2.html","kind":"lesson","search":"identificar características dominio requisitos implícitas priorizar drivers fitness functions gobernanza medición escenarios Silicon Sandwiches"},{"id":"fsam2l3","num":3,"lnum":3,"title":"Componentes y cuánto abarcan","href":"fsam2l3.html","kind":"lesson","search":"componentes granularidad contrato actores responsabilidades cuántica arquitectónica monolito distribuido trampa entidades flujo negocio equipos"},{"id":"fsam2q","num":4,"lnum":4,"title":"Cierre del módulo 02","href":"fsam2q.html","kind":"quiz","search":"cierre modularidad cohesión acoplamiento componentes fitness functions cuántica granularidad contratos gobernanza"}]},{"num":"03","title":"Estilos fundamentales","lessons":[{"id":"fsam3l1","num":1,"lnum":1,"title":"Arquitectura en capas","href":"fsam3l1.html","kind":"lesson","search":"arquitectura capas layered presentación negocio persistencia capas cerradas abiertas aislamiento sinkhole simplicidad despliegue"},{"id":"fsam3l2","num":2,"lnum":2,"title":"Arquitectura pipeline","href":"fsam3l2.html","kind":"lesson","search":"pipeline pipes filtros tubos unidireccional ETL compilador batch streaming etapas contrato transformación"},{"id":"fsam3l3","num":3,"lnum":3,"title":"Microkernel","href":"fsam3l3.html","kind":"lesson","search":"microkernel núcleo core plugins registro contrato extensibilidad personalización IDE navegador reglas variantes"},{"id":"fsam3q","num":4,"lnum":4,"title":"Cierre del módulo 03","href":"fsam3q.html","kind":"quiz","search":"cierre capas pipeline microkernel estilos fundamentales sinkhole filtros plugins núcleo contrato"}]},{"num":"04","title":"Estilos distribuidos","lessons":[{"id":"fsam4l1","num":1,"lnum":1,"title":"Service-based","href":"fsam4l1.html","kind":"lesson","search":"service-based servicios dominio base compartida particionada granularidad API gateway transacciones latencia despliegue"},{"id":"fsam4l2","num":2,"lnum":2,"title":"Arquitectura dirigida por eventos","href":"fsam4l2.html","kind":"lesson","search":"event-driven eventos broker mediador asincronía idempotencia orden pérdida mensajes reintentos cola fallos request-reply híbrido"},{"id":"fsam4l3","num":3,"lnum":3,"title":"Space-based","href":"fsam4l3.html","kind":"lesson","search":"space-based rejilla datos memoria unidades procesamiento elasticidad colisiones replicación caché cercana durabilidad picos"},{"id":"fsam4q","num":4,"lnum":4,"title":"Cierre del módulo 04","href":"fsam4q.html","kind":"quiz","search":"cierre service-based event-driven space-based estilos distribuidos base compartida eventos rejilla elasticidad"}]},{"num":"05","title":"Microservicios y elección","lessons":[{"id":"fsam5l1","num":1,"lnum":1,"title":"SOA orquestada","href":"fsam5l1.html","kind":"lesson","search":"SOA orientada servicios orquestación orquestador bus taxonomía reutilización acoplamiento contratos integración heredado"},{"id":"fsam5l2","num":2,"lnum":2,"title":"Microservicios","href":"fsam5l2.html","kind":"lesson","search":"microservicios bounded context API gateway datos propios comunicación síncrona asíncrona coreografía orquestación sagas consistencia eventual autonomía"},{"id":"fsam5l3","num":3,"lnum":3,"title":"Cómo elegir un estilo","href":"fsam5l3.html","kind":"lesson","search":"elegir estilo arquitectura modas criterios monolito modular distribuido híbrido microservicios service-based coste equipo revisión"},{"id":"fsam5q","num":4,"lnum":4,"title":"Cierre del módulo 05","href":"fsam5q.html","kind":"quiz","search":"cierre SOA microservicios elegir estilo orquestación coreografía contextos datos autonomía monolito híbrido"}]},{"num":"06","title":"Decisiones y riesgo","lessons":[{"id":"fsam6l1","num":1,"lnum":1,"title":"Decisiones de arquitectura","href":"fsam6l1.html","kind":"lesson","search":"decisiones arquitectura ADR anti-patrones cubrirse espaldas día marmota correo significativo contexto consecuencias estado wiki"},{"id":"fsam6l2","num":2,"lnum":2,"title":"Análisis de riesgo","href":"fsam6l2.html","kind":"lesson","search":"riesgo arquitectura matriz probabilidad impacto evaluación risk storming historias plan mitigación aceptación contingencia"},{"id":"fsam6l3","num":3,"lnum":3,"title":"Diagramar y presentar","href":"fsam6l3.html","kind":"lesson","search":"diagramas arquitectura C4 contexto contenedores componentes código leyenda presentación audiencia narrativa trade-offs documentación viva"},{"id":"fsam6q","num":4,"lnum":4,"title":"Cierre del módulo 06","href":"fsam6q.html","kind":"quiz","search":"cierre decisiones ADR riesgo matriz risk storming diagramas C4 presentación audiencia narrativa documentación"}]},{"num":"07","title":"Equipos y carrera","lessons":[{"id":"fsam7l1","num":1,"lnum":1,"title":"Equipos eficaces","href":"fsam7l1.html","kind":"lesson","search":"equipos eficaces límites autonomía control personalidades arquitecto señales alerta listas comprobación guía microgestión"},{"id":"fsam7l2","num":2,"lnum":2,"title":"Negociación y liderazgo","href":"fsam7l2.html","kind":"lesson","search":"negociación liderazgo intereses posiciones facilitación acuerdos credibilidad audiencia equipo integración sostenibilidad"},{"id":"fsam7l3","num":3,"lnum":3,"title":"La carrera del arquitecto","href":"fsam7l3.html","kind":"lesson","search":"carrera arquitecto regla veinte minutos radar personal comunidad mentoría aprendizaje práctica deliberada amplitud profundidad"},{"id":"fsam7q","num":4,"lnum":4,"title":"Cierre del módulo 07","href":"fsam7q.html","kind":"quiz","search":"cierre equipos autonomía control negociación liderazgo carrera radar mentoría práctica deliberada"}]}]};</script>
+<script src="js/curso.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fundamentos de Arquitectura · Edición esencial</title>
+<meta name="description" content="Edición esencial en español de «Fundamentals of Software Architecture», de Mark Richards y Neal Ford: pensamiento arquitectónico, modularidad, características, estilos, decisiones, riesgo y las habilidades de equipo que hacen sostenible una arquitectura, con texto y diagramas originales.">
+<meta name="theme-color" content="#f5f1e8">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/curso.css">
+<script>(function(){try{var t=localStorage.getItem('fsa_theme');if(!t){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+</head>
+<body class="is-home">
+<a class="skip" href="#temario">Saltar al temario</a>
+
+<div class="overlay" data-overlay></div><header class="masthead">
+<a class="brand" href="index.html">
+  <span class="brand-mark">FSA</span>
+  <span class="brand-text"><strong>Fundamentos de Arquitectura</strong><span>Edición esencial</span></span>
+</a>
+  <nav class="mast-nav" aria-label="Principal"><a href="#temario">Temario</a><a href="#metodo">Método</a><a href="glosario.html">Glosario</a><a href="progreso.html">Mi progreso</a></nav>
+  <div class="mast-actions">
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Cambiar tema"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z"></path></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button>
+    <a class="mast-cta" href="fsam1l1.html">Empezar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <span class="eyebrow">Edición esencial · 2026</span>
+    <h1>La estructura importa.<br>Las decisiones <em>sostienen</em>.</h1>
+    <p class="lede">La edición esencial de <em>Fundamentals of Software Architecture</em>: pensamiento arquitectónico, modularidad, características, estilos, decisiones, riesgo y equipos. Siete módulos, 21 lecciones y los criterios que separan una arquitectura que evoluciona de una que se fosiliza.</p>
+    <div class="hero-actions">
+      <a class="btn btn-ink" href="fsam1l1.html">Abrir la primera lección <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      <a class="btn btn-line" href="Fundamentos-Arquitectura-Esencial.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path></svg> Descargar el PDF</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>21</b><span>Lecciones</span></div>
+      <div class="hero-stat"><b>7</b><span>Módulos</span></div>
+      <div class="hero-stat"><b>4,1 h</b><span>De lectura</span></div>
+      <div class="hero-stat"><b>21</b><span>Diagramas</span></div>
+    </div>
+  </div>
+  <aside class="pass" aria-label="Tu progreso en el curso">
+    <div class="pass-top"><span class="eyebrow">Pase de estudiante</span><span class="pass-edition">FSA · 2026<br>Español</span></div>
+    <div class="pass-main"><span class="pass-big">28</span><span class="pass-big-label">pasos<br>por recorrer</span></div>
+    <p class="pass-desc">Tu avance se guarda en este navegador. Empieza por donde quieras: el curso está pensado para leerse en orden.</p>
+    <div class="pass-progress"><div class="bar"><i data-bar></i></div><span><b data-done-count>0</b> / 28</span></div>
+    <div class="pass-actions">
+      <a class="btn btn-cream" data-resume href="fsam1l1.html"><span><span data-resume-label>Empezar el curso</span><br><small style="font-weight:500;opacity:.7;font-size:10px" data-resume-title>Qué es la arquitectura de software</small></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      <a class="btn btn-line" style="border-color:rgba(255,255,255,.22);color:#e9e1d1" href="Fundamentos-Arquitectura-Esencial.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path></svg> PDF</a>
+    </div>
+    <div class="pass-note"><span>7 evaluaciones</span><span>Acceso libre</span></div>
+  </aside>
+</section>
+
+<section class="section" id="temario">
+  <div class="section-head">
+    <div><span class="eyebrow">Plan de estudios</span><h2>Todo el temario, a la vista.</h2></div>
+    <p>Siete módulos que siguen el recorrido del libro: pensamiento arquitectónico, modularidad, estilos fundamentales, estilos distribuidos, elección, decisiones y equipos.</p>
+    <button class="text-toggle" type="button" data-toggle-all>Contraer el temario</button>
+  </div>
+  <details class="module" data-module="01" open>
+  <summary>
+    <span class="module-num">01</span>
+    <span class="module-title-wrap"><span class="module-title">Pensamiento arquitectónico</span><span class="module-sub">Qué decide un arquitecto y con qué criterios</span></span>
+    <span class="module-meta">4 sesiones · 0,6 h<br><span data-modcount="01">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="01"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="fsam1l1" href="fsam1l1.html">
+  <span class="row-num">01.1</span>
+  <span class="row-title">Qué es la arquitectura de software</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">9 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam1l2" href="fsam1l2.html">
+  <span class="row-num">01.2</span>
+  <span class="row-title">Pensar en trade-offs</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">9 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam1l3" href="fsam1l3.html">
+  <span class="row-num">01.3</span>
+  <span class="row-title">Características de arquitectura</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">9 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="fsam1q" href="fsam1q.html">
+  <span class="row-num">01.4</span>
+  <span class="row-title">Cierre del módulo 01</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="02" open>
+  <summary>
+    <span class="module-num">02</span>
+    <span class="module-title-wrap"><span class="module-title">Modularidad y componentes</span><span class="module-sub">Dividir sin romper el sistema</span></span>
+    <span class="module-meta">4 sesiones · 0,6 h<br><span data-modcount="02">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="02"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="fsam2l1" href="fsam2l1.html">
+  <span class="row-num">02.1</span>
+  <span class="row-title">Modularidad: cohesión y acoplamiento</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">9 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam2l2" href="fsam2l2.html">
+  <span class="row-num">02.2</span>
+  <span class="row-title">Identificar y medir características</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">9 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam2l3" href="fsam2l3.html">
+  <span class="row-num">02.3</span>
+  <span class="row-title">Componentes y cuánto abarcan</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">9 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="fsam2q" href="fsam2q.html">
+  <span class="row-num">02.4</span>
+  <span class="row-title">Cierre del módulo 02</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="03" open>
+  <summary>
+    <span class="module-num">03</span>
+    <span class="module-title-wrap"><span class="module-title">Estilos fundamentales</span><span class="module-sub">Monolitos que resuelven bien un problema</span></span>
+    <span class="module-meta">4 sesiones · 0,6 h<br><span data-modcount="03">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="03"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="fsam3l1" href="fsam3l1.html">
+  <span class="row-num">03.1</span>
+  <span class="row-title">Arquitectura en capas</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam3l2" href="fsam3l2.html">
+  <span class="row-num">03.2</span>
+  <span class="row-title">Arquitectura pipeline</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam3l3" href="fsam3l3.html">
+  <span class="row-num">03.3</span>
+  <span class="row-title">Microkernel</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="fsam3q" href="fsam3q.html">
+  <span class="row-num">03.4</span>
+  <span class="row-title">Cierre del módulo 03</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="04" open>
+  <summary>
+    <span class="module-num">04</span>
+    <span class="module-title-wrap"><span class="module-title">Estilos distribuidos</span><span class="module-sub">Cuando la red entra en el diseño</span></span>
+    <span class="module-meta">4 sesiones · 0,6 h<br><span data-modcount="04">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="04"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="fsam4l1" href="fsam4l1.html">
+  <span class="row-num">04.1</span>
+  <span class="row-title">Service-based</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">9 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam4l2" href="fsam4l2.html">
+  <span class="row-num">04.2</span>
+  <span class="row-title">Arquitectura dirigida por eventos</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">9 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam4l3" href="fsam4l3.html">
+  <span class="row-num">04.3</span>
+  <span class="row-title">Space-based</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="fsam4q" href="fsam4q.html">
+  <span class="row-num">04.4</span>
+  <span class="row-title">Cierre del módulo 04</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="05" open>
+  <summary>
+    <span class="module-num">05</span>
+    <span class="module-title-wrap"><span class="module-title">Microservicios y elección</span><span class="module-sub">El coste de repartir el sistema</span></span>
+    <span class="module-meta">4 sesiones · 0,6 h<br><span data-modcount="05">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="05"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="fsam5l1" href="fsam5l1.html">
+  <span class="row-num">05.1</span>
+  <span class="row-title">SOA orquestada</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam5l2" href="fsam5l2.html">
+  <span class="row-num">05.2</span>
+  <span class="row-title">Microservicios</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">9 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam5l3" href="fsam5l3.html">
+  <span class="row-num">05.3</span>
+  <span class="row-title">Cómo elegir un estilo</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="fsam5q" href="fsam5q.html">
+  <span class="row-num">05.4</span>
+  <span class="row-title">Cierre del módulo 05</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="06" open>
+  <summary>
+    <span class="module-num">06</span>
+    <span class="module-title-wrap"><span class="module-title">Decisiones y riesgo</span><span class="module-sub">Documentar, evaluar y comunicar</span></span>
+    <span class="module-meta">4 sesiones · 0,6 h<br><span data-modcount="06">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="06"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="fsam6l1" href="fsam6l1.html">
+  <span class="row-num">06.1</span>
+  <span class="row-title">Decisiones de arquitectura</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam6l2" href="fsam6l2.html">
+  <span class="row-num">06.2</span>
+  <span class="row-title">Análisis de riesgo</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam6l3" href="fsam6l3.html">
+  <span class="row-num">06.3</span>
+  <span class="row-title">Diagramar y presentar</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="fsam6q" href="fsam6q.html">
+  <span class="row-num">06.4</span>
+  <span class="row-title">Cierre del módulo 06</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="07" open>
+  <summary>
+    <span class="module-num">07</span>
+    <span class="module-title-wrap"><span class="module-title">Equipos y carrera</span><span class="module-sub">La arquitectura también se negocia</span></span>
+    <span class="module-meta">4 sesiones · 0,6 h<br><span data-modcount="07">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="07"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="fsam7l1" href="fsam7l1.html">
+  <span class="row-num">07.1</span>
+  <span class="row-title">Equipos eficaces</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam7l2" href="fsam7l2.html">
+  <span class="row-num">07.2</span>
+  <span class="row-title">Negociación y liderazgo</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="fsam7l3" href="fsam7l3.html">
+  <span class="row-num">07.3</span>
+  <span class="row-title">La carrera del arquitecto</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">8 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="fsam7q" href="fsam7q.html">
+  <span class="row-num">07.4</span>
+  <span class="row-title">Cierre del módulo 07</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details>
+</section>
+
+<section class="section" id="metodo">
+  <div class="section-head">
+    <div><span class="eyebrow">Cómo está pensado</span><h2>Leer, comprobar, construir.</h2></div>
+    <p>Una experiencia de lectura continua: sin botones que te devuelvan al inicio y sin callejones sin salida.</p>
+  </div>
+  <div class="method-grid">
+    <div class="method"><span class="n">01</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg><h3>Avanza sin fricción</h3><p>Cada lección termina con «Completar y seguir». También puedes usar las flechas del teclado.</p></div>
+    <div class="method"><span class="n">02</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12.5 5 5L20 6.5"></path></svg><h3>Comprueba lo aprendido</h3><p>Al cerrar cada módulo, una evaluación de cuatro preguntas y un espacio para ejercicios aplicados.</p></div>
+    <div class="method"><span class="n">03</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path></svg><h3>Llévatelo contigo</h3><p>El manual esencial en PDF incluye todo el curso, con los diagramas y el glosario, para consultarlo sin conexión.</p></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div><span class="eyebrow" style="color:#ff8a5c">Sigue profundizando</span><h2>La arquitectura no es el diagrama.</h2><p>Este manual convierte los capítulos de <em>Fundamentals of Software Architecture</em> en un recorrido práctico: características, límites, estilos, decisiones, riesgo y equipos. Úsalo para razonar trade-offs, no para memorizar cajas.</p></div>
+    <div class="foot-links"><a href="fsam1l1.html">Empezar el curso →</a><a href="glosario.html">Glosario de términos →</a><a href="progreso.html">Mi progreso →</a><a href="Fundamentos-Arquitectura-Esencial.pdf">Manual en PDF →</a></div>
+  </div>
+  <div class="foot-bottom"><span>Fundamentos de Arquitectura · Edición esencial · 2026</span><span>Manual original · Temas de Mark Richards y Neal Ford</span></div>
+</footer>
+<div class="searchbox" data-search role="dialog" aria-modal="true" aria-label="Buscar en el curso">
+  <div class="search-panel">
+    <div class="search-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4"></path></svg><input class="search-input" type="search" placeholder="Busca una lección o un tema…" aria-label="Buscar una lección o un tema" autocomplete="off"><button class="search-close" type="button" data-search-close>ESC</button></div>
+    <div class="search-results"></div>
+    <div class="sr-hint"><span>↑ ↓ para navegar · Enter para abrir</span><span>Esc para cerrar</span></div>
+  </div>
+</div>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+<script>window.FSA={"total":28,"current":null,"next":null,"prev":null,"modules":[{"num":"01","title":"Pensamiento arquitectónico","lessons":[{"id":"fsam1l1","num":1,"lnum":1,"title":"Qué es la arquitectura de software","href":"fsam1l1.html","kind":"lesson","search":"arquitectura definición estructura características decisiones principios rol del arquitecto trade-off leyes expectativas negocio comunicación"},{"id":"fsam1l2","num":2,"lnum":2,"title":"Pensar en trade-offs","href":"fsam1l2.html","kind":"lesson","search":"trade-off arquitectura diseño amplitud técnica profundidad negocio impulsores decisiones suposiciones comparar opciones reversibilidad"},{"id":"fsam1l3","num":3,"lnum":3,"title":"Características de arquitectura","href":"fsam1l3.html","kind":"lesson","search":"características arquitectura atributos calidad ilidades operativas estructurales dominio disponibilidad escalabilidad seguridad mantenibilidad priorizar mínimo malo drivers"},{"id":"fsam1q","num":4,"lnum":4,"title":"Cierre del módulo 01","href":"fsam1q.html","kind":"quiz","search":"cierre arquitectura definición características decisiones trade-off prioridad escenarios rol del arquitecto"}]},{"num":"02","title":"Modularidad y componentes","lessons":[{"id":"fsam2l1","num":1,"lnum":1,"title":"Modularidad: cohesión y acoplamiento","href":"fsam2l1.html","kind":"lesson","search":"modularidad cohesión acoplamiento connascencia aferente eferente inestabilidad abstracción secuencia principal módulo granularidad dependencias"},{"id":"fsam2l2","num":2,"lnum":2,"title":"Identificar y medir características","href":"fsam2l2.html","kind":"lesson","search":"identificar características dominio requisitos implícitas priorizar drivers fitness functions gobernanza medición escenarios Silicon Sandwiches"},{"id":"fsam2l3","num":3,"lnum":3,"title":"Componentes y cuánto abarcan","href":"fsam2l3.html","kind":"lesson","search":"componentes granularidad contrato actores responsabilidades cuántica arquitectónica monolito distribuido trampa entidades flujo negocio equipos"},{"id":"fsam2q","num":4,"lnum":4,"title":"Cierre del módulo 02","href":"fsam2q.html","kind":"quiz","search":"cierre modularidad cohesión acoplamiento componentes fitness functions cuántica granularidad contratos gobernanza"}]},{"num":"03","title":"Estilos fundamentales","lessons":[{"id":"fsam3l1","num":1,"lnum":1,"title":"Arquitectura en capas","href":"fsam3l1.html","kind":"lesson","search":"arquitectura capas layered presentación negocio persistencia capas cerradas abiertas aislamiento sinkhole simplicidad despliegue"},{"id":"fsam3l2","num":2,"lnum":2,"title":"Arquitectura pipeline","href":"fsam3l2.html","kind":"lesson","search":"pipeline pipes filtros tubos unidireccional ETL compilador batch streaming etapas contrato transformación"},{"id":"fsam3l3","num":3,"lnum":3,"title":"Microkernel","href":"fsam3l3.html","kind":"lesson","search":"microkernel núcleo core plugins registro contrato extensibilidad personalización IDE navegador reglas variantes"},{"id":"fsam3q","num":4,"lnum":4,"title":"Cierre del módulo 03","href":"fsam3q.html","kind":"quiz","search":"cierre capas pipeline microkernel estilos fundamentales sinkhole filtros plugins núcleo contrato"}]},{"num":"04","title":"Estilos distribuidos","lessons":[{"id":"fsam4l1","num":1,"lnum":1,"title":"Service-based","href":"fsam4l1.html","kind":"lesson","search":"service-based servicios dominio base compartida particionada granularidad API gateway transacciones latencia despliegue"},{"id":"fsam4l2","num":2,"lnum":2,"title":"Arquitectura dirigida por eventos","href":"fsam4l2.html","kind":"lesson","search":"event-driven eventos broker mediador asincronía idempotencia orden pérdida mensajes reintentos cola fallos request-reply híbrido"},{"id":"fsam4l3","num":3,"lnum":3,"title":"Space-based","href":"fsam4l3.html","kind":"lesson","search":"space-based rejilla datos memoria unidades procesamiento elasticidad colisiones replicación caché cercana durabilidad picos"},{"id":"fsam4q","num":4,"lnum":4,"title":"Cierre del módulo 04","href":"fsam4q.html","kind":"quiz","search":"cierre service-based event-driven space-based estilos distribuidos base compartida eventos rejilla elasticidad"}]},{"num":"05","title":"Microservicios y elección","lessons":[{"id":"fsam5l1","num":1,"lnum":1,"title":"SOA orquestada","href":"fsam5l1.html","kind":"lesson","search":"SOA orientada servicios orquestación orquestador bus taxonomía reutilización acoplamiento contratos integración heredado"},{"id":"fsam5l2","num":2,"lnum":2,"title":"Microservicios","href":"fsam5l2.html","kind":"lesson","search":"microservicios bounded context API gateway datos propios comunicación síncrona asíncrona coreografía orquestación sagas consistencia eventual autonomía"},{"id":"fsam5l3","num":3,"lnum":3,"title":"Cómo elegir un estilo","href":"fsam5l3.html","kind":"lesson","search":"elegir estilo arquitectura modas criterios monolito modular distribuido híbrido microservicios service-based coste equipo revisión"},{"id":"fsam5q","num":4,"lnum":4,"title":"Cierre del módulo 05","href":"fsam5q.html","kind":"quiz","search":"cierre SOA microservicios elegir estilo orquestación coreografía contextos datos autonomía monolito híbrido"}]},{"num":"06","title":"Decisiones y riesgo","lessons":[{"id":"fsam6l1","num":1,"lnum":1,"title":"Decisiones de arquitectura","href":"fsam6l1.html","kind":"lesson","search":"decisiones arquitectura ADR anti-patrones cubrirse espaldas día marmota correo significativo contexto consecuencias estado wiki"},{"id":"fsam6l2","num":2,"lnum":2,"title":"Análisis de riesgo","href":"fsam6l2.html","kind":"lesson","search":"riesgo arquitectura matriz probabilidad impacto evaluación risk storming historias plan mitigación aceptación contingencia"},{"id":"fsam6l3","num":3,"lnum":3,"title":"Diagramar y presentar","href":"fsam6l3.html","kind":"lesson","search":"diagramas arquitectura C4 contexto contenedores componentes código leyenda presentación audiencia narrativa trade-offs documentación viva"},{"id":"fsam6q","num":4,"lnum":4,"title":"Cierre del módulo 06","href":"fsam6q.html","kind":"quiz","search":"cierre decisiones ADR riesgo matriz risk storming diagramas C4 presentación audiencia narrativa documentación"}]},{"num":"07","title":"Equipos y carrera","lessons":[{"id":"fsam7l1","num":1,"lnum":1,"title":"Equipos eficaces","href":"fsam7l1.html","kind":"lesson","search":"equipos eficaces límites autonomía control personalidades arquitecto señales alerta listas comprobación guía microgestión"},{"id":"fsam7l2","num":2,"lnum":2,"title":"Negociación y liderazgo","href":"fsam7l2.html","kind":"lesson","search":"negociación liderazgo intereses posiciones facilitación acuerdos credibilidad audiencia equipo integración sostenibilidad"},{"id":"fsam7l3","num":3,"lnum":3,"title":"La carrera del arquitecto","href":"fsam7l3.html","kind":"lesson","search":"carrera arquitecto regla veinte minutos radar personal comunidad mentoría aprendizaje práctica deliberada amplitud profundidad"},{"id":"fsam7q","num":4,"lnum":4,"title":"Cierre del módulo 07","href":"fsam7q.html","kind":"quiz","search":"cierre equipos autonomía control negociación liderazgo carrera radar mentoría práctica deliberada"}]}]};</script>
+<script src="js/curso.js"></script>
+</body>
+</html>
